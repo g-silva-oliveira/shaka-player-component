@@ -4,7 +4,7 @@
   "description": "A component library to customize media player with Shaka Player.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/tsc/index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "/dist"
   ],
@@ -27,7 +27,7 @@
     "g-silva-oliveira <g.silva.oliveira@accenture.com> <guilhermeanv7822@gmail.com>"
   ],
   "scripts": {
-    "build": "rm -rf dist/ && prettier --write src/ && yarn build:esm && yarn build:cjs",
+    "build": "rm -rf dist/ && yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
