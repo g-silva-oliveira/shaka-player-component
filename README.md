@@ -18,8 +18,7 @@ Nos esforçamos para manter a biblioteca leve, simples e livre de outras depende
 
 [shaka player]: https://shaka-player-demo.appspot.com/demo/
 [dash]: https://dashif.org/
-
-## [hls]: https://developer.apple.com/streaming/
+[hls]: https://developer.apple.com/streaming/
 
 ## Installation
 
