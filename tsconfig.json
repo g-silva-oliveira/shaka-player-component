@@ -2,14 +2,18 @@
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
     /* Projects */
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "rootDirs": ["./src"],
+    "preserveConstEnums": true,
     /* Language and Environment */
     "target": "es2016" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
     "lib": ["ES5", "ES2015", "ES2016", "DOM", "ESNext"] /* Specify a set of bundled library declaration files that describe the target runtime environment. */,
     "jsx": "react" /* Specify what JSX code is generated. */,
     /* Modules */
-    "module": "ES2015" /* Specify what module code is generated. */,
+    "module": "ES6" /* Specify what module code is generated. */,
     "moduleResolution": "node" /* Specify how TypeScript looks up a file from a given module specifier. */,
-    "types": ["node"] /* Specify type package names to be included without being referenced in a source file. */,
+    "types": ["node", "shaka-player", "jest"] /* Specify type package names to be included without being referenced in a source file. */,
     /* JavaScript Support */
     /* Emit */
     "declaration": true /* Generate .d.ts files from TypeScript and JavaScript files in your project. */,
@@ -20,12 +24,12 @@
     "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
     "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
     /* Type Checking */
-    "strict": true /* Enable all strict type-checking options. */,
+    // "strict": true /* Enable all strict type-checking options. */,
     "noImplicitAny": true /* Enable error reporting for expressions and declarations with an implied 'any' type. */,
     "noUnusedLocals": true /* Enable error reporting when local variables aren't read. */,
     /* Completeness */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }

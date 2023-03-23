@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player Should render className container correctly 1`] = `ShallowWrapper {}`;
+
+exports[`Player Should render container className and playerClassName container correctly 1`] = `ShallowWrapper {}`;
+
+exports[`Player Should render correctly 1`] = `
+<div
+  className="mk-theme"
+  style={
+    {
+      "maxWidth": "100%",
+      "width": "100%",
+    }
+  }
+>
+  <video
+    style={
+      {
+        "maxWidth": "100%",
+        "width": "100%",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Player Should render playerClassName container correctly 1`] = `ShallowWrapper {}`;
+
+exports[`Player Should renders source[manifest] string correctly 1`] = `ShallowWrapper {}`;
