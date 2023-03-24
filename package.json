@@ -17,7 +17,7 @@
     "test": "jest"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
+    "@g-silva-oliveira:registry": "https://npm.pkg.github.com/",
     "name": "shaka-player-component"
   },
   "author": "g-silva-oliveira <g.silva.oliveira@accenture.com> <guilhermeanv7822@gmail.com>",
