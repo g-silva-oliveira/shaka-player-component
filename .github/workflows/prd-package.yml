@@ -1,0 +1,50 @@
+name: Publish shaka-player-component to NPM
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🏗 Setup repo
+        uses: actions/checkout@v3
+
+      - name: 🏗 Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: yarn
+          cache-dependency-path: '**/yarn.lock'
+
+      - name: 📦 Install dependencies
+        run: yarn install
+
+      - name: 🧪 Execute tests
+        run: yarn test
+
+      - name: 💚 Build pkg
+        run: yarn build
+
+  publish-gpr:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          always-auth: true
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://npm.pkg.github.com/
+
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - run: yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.SHAKA_COMPONENT_GITHUB_TOKEN }}

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A component library to customize media player with Shaka Player.",
   "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist/"
@@ -15,6 +15,10 @@
     "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
     "build:css": "yarn nodeminify --compressor clean-css --input \"src/styles/ui.css\" --output \"dist/ui.css\"",
     "test": "jest"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "name": "shaka-player-component"
   },
   "author": "g-silva-oliveira <g.silva.oliveira@accenture.com> <guilhermeanv7822@gmail.com>",
   "license": "MIT",
@@ -80,9 +84,9 @@
     "verbose": true
   },
   "keywords": [
-    "shaka",
     "player",
     "video",
+    "shaka",
     "web",
     "streaming",
     "vod",

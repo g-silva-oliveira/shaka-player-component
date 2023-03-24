@@ -13,7 +13,7 @@ describe("Player", () => {
   });
 
   it("Should renders source[manifest] string correctly", () => {
-    const props = { srcManifest: "this is sample src" };
+    const props = { src: "this is sample src" };
     const tree = Enzyme.shallow(<Player {...props} />);
     expect(tree).toMatchSnapshot();
   });

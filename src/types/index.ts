@@ -28,7 +28,7 @@ export interface IPlayerProps {
   onStatsChange?(stats: IStats): void | undefined;
   playerClassName?: string;
   playsInline?: boolean | undefined;
-  srcManifest?: string;
+  src?: string;
   superConfig?: SuperConfig | undefined;
   uiConfig?: ShakaExtern.UIConfiguration | any;
 };

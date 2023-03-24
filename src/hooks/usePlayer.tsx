@@ -54,17 +54,17 @@ const usePlayer = (
   }, [player, props.config]);
 
   useEffect(() => {
-    if (player && props.srcManifest && ShakaPlayer.isBrowserSupported()) {
+    if (player && props.src && ShakaPlayer.isBrowserSupported()) {
       const initLoad = async () => {
         try {
-          await player.load(props.srcManifest)
+          await player.load(props.src)
         } catch (error) {
           props.onPlayerError && props.onPlayerError(error);
         }
       };
       initLoad();
     }
-  }, [player, props.srcManifest]);
+  }, [player, props.src]);
 
   return { player, ui };
 };

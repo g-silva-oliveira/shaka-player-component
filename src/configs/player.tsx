@@ -1,6 +1,16 @@
 const vodConfig = {
   ui: {
-    controlPanelElements: ["play_pause", "time_and_duration", "mute", "fullscreen"]
+    controlPanelElements: [
+      'play_pause',
+      'rewind',
+      'fast_forward',
+      'mute',
+      'volume',
+      'time_and_duration',
+      'spacer',
+      'overflow_menu',
+      'fullscreen',
+    ]
   },
 };
 

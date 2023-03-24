@@ -22,14 +22,18 @@ Nos esforçamos para manter a biblioteca leve, simples e livre de outras depende
 
 ## Installation
 
-Use the package manager [yarn](https://classic.yarnpkg.com/en/) or [npm](https://www.npmjs.com/) to install `shaka-player-component`.
+Use the package manager [npm](https://www.npmjs.com/) or via package.json to install `shaka-player-component`.
+
+🖥️ Install from the command line:
 
 ```bash
-yarn add shaka-player-component
+npm install shaka-player-component@1.0.0
+```
 
-or
+📝 Install via package.json
 
-npm install shaka-player-component
+```json
+"shaka-player-component": "1.0.0"
 ```
 
 ## Usage
@@ -87,12 +91,6 @@ function App() {
 |   Angular    |   -   |   -   |    -    |
 |     Vue      |   -   |   -   |    -    |
 |    Svelt     |   -   |   -   |    -    |
-
-<!-- ## DASH features
-
-## HLS features
-
-## DRM support matrix -->
 
 ---
 
